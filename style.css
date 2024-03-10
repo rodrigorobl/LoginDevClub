@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+
+:root {
+  --bg-login: url("./assets/login-bg.jpg");
+  --bg-color: #1e1e1e;
+  --color-cinza: #e2e2e2;
+  --bg-input: #121212;
+  --text-input: #c1c1c1;
+  --color-purple: #7c488a;
+}
+
+body {
+  background-color: var(--bg-color);
+  line-height: 1.5;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.imagem-login {
+  background-image: var(--bg-login);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 2.5rem;
+}
+.imagem-login p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.imagem-login span {
+  color: #ff005c;
+  font-size: 0.9rem;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3.25rem 4.75rem;
+}
+
+.login img {
+  height: 15.625rem;
+  margin-bottom: 1.5rem;
+}
+
+.formulario-grupo,
+.formulario-grupo input {
+  width: 100%;
+}
+
+.formulario-grupo label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-cinza);
+  text-align: left;
+}
+
+.formulario-grupo input {
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.313rem;
+  padding: 0.75rem;
+  outline: none;
+  background: var(--bg-input);
+  height: initial;
+  font-size: 0.9rem;
+  color: var(--text-input);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.formulario-grupo input:focus {
+  outline: 0.063rem solid var(--color-purple);
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+}
+
+.checkbox-div input[type=checkbox] {
+  margin-right: 1.25rem;
+}
+
+.checkbox-div input[type=checkbox]:before{
+  cursor: pointer;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: .25rem;
+  background-color: #121212;
+  border: 0.063rem solid #363739;
+}
+
+.checkbox-div input[type=checkbox]:checked:before {
+  content: '\2714';
+  font-size: .875rem;
+  color:var(--color-purple);
+  text-align: center;
+}
+
+.checkbox-div label {
+  margin-top: .5rem;
+  cursor:pointer;
+  color: var(--color-cinza);
+}
+
+button {
+  border-radius: 2.438rem;
+  min-width: 7.5rem;
+  width: 25%;
+  height: 3.125rem;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+  background-color: var(--color-purple);
+  color: var(--color-cinza);
+  cursor: pointer;
+  transition: .25s;
+  margin-bottom: 1.5rem;
+}
+
+button:hover {
+  background-color: var(--color-cinza);
+  color: var(--color-purple);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-cinza);
+  font-size: .9rem;
+  transition: .25s;
+}
+
+a:hover {
+  color: var(--color-purple);
+  text-decoration: underline;
+}
+
+.whats-app {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 1.625rem;
+  margin-bottom: 1.625rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.whats-app:hover {
+  transform: scale(1.1);
+}
